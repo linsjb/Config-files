@@ -1,0 +1,65 @@
+alias reload="source ~/.zshrc"
+
+alias config="code ~/.zshrc"
+
+alias new-c-program='
+	f() {
+		git clone git@github.com:linsjb/cpp_project_base.git $1;
+		cd $1;
+		make build-structure;
+		echo "Base program created sucessfully"
+	}; f'
+
+alias new-latex-basic='
+	f() {
+		git clone git@github.com:linsjb/LaTex-basic-template.git $1;
+		cd $1;
+		rm -rf .git;
+		rm readme.md;
+		echo LaTeX basic project "$1" created sucessfully!
+	}; f'
+alias new-latex-ie3='
+	f() {
+		git clone git@github.com:linsjb/LaTeX-IEEE-template.git $1;
+		cd $1;
+		rm -rf .git;
+		rm readme.md;
+		echo LaTeX IEEE project "$1" created sucessfully!
+	}; f'
+
+alias new-latex-presentation='
+	f() {
+		git clone git@github.com:linsjb/LaTeX-presentation-template.git $1;
+		cd $1;
+		rm -rf .git;
+		rm readme.md;
+		mkdir content;
+		mkdir content/notes;
+		mkdir attachments;
+		mkdir attachments/figures;
+		mkdir attachments/figures/images;
+		mkdir attachments/tables;
+
+		echo LaTeX presentation projekt "$1" crated sucessfully!
+	}; f'
+alias git-init='
+	f() {
+		git init;
+		git add .;
+		git commit -m "First commit"
+		git remote add origin $1;
+		git push -u origin master;
+	}; f'
+
+alias fetch-pdf='
+	f() {
+		mv *.pdf ~/Downloads/$1.pdf;	
+		echo PDF renamed and moved to ~/downloads succesfully!
+	}; f'
+
+alias marked='f() {open -a "Marked 2" $1}; f'
+
+alias latexpres='
+f() {
+	dspdfviewer $1;
+}; f'
