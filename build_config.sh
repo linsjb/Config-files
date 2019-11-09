@@ -1,6 +1,7 @@
 
 # Oh-my-zsh installation
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+sh install.sh --skip-chsh
 
 # Clone ZSH theme and plugins
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
