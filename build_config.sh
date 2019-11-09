@@ -11,4 +11,4 @@ ln -s ~/.dotfile_configs/vim/vimrc ~/.vimrc
 rm ~/.zshrc
 ln -s ~/.dotfile_configs/zsh/zshrc ~/.zshrc
 ln -s ~/.dotfile_configs/hyper/hyper.js ~/.hyper.js
-ln -s "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme" "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
