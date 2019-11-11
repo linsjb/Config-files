@@ -63,3 +63,11 @@ alias latexpres='
 f() {
 	dspdfviewer $1;
 }; f'
+
+alias doim='docker images'
+alias dops='docker ps'
+alias dopsa='docker ps -a'
+alias doconrm='f() {docker rm $1}; f'
+alias doimgrm='f() {docker image rm $1};f'
+
+
