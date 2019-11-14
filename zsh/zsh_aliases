@@ -59,15 +59,14 @@ alias fetch-pdf='
 
 alias marked='f() {open -a "Marked 2" $1}; f'
 
-alias latexpres='
-f() {
-	dspdfviewer $1;
-}; f'
+alias latexpres='f() { dspdfviewer $1; }; f'
 
 alias doim='docker images'
 alias dops='docker ps'
 alias dopsa='docker ps -a'
-alias doconrm='f() {docker rm $1}; f'
-alias doimgrm='f() {docker image rm $1};f'
-
-
+alias dorm='f() {docker rm $1 $2}; f'
+alias doimrm='f() {docker image rm $1 $2};f'
+alias docou='f() {docker-compose up $1}; f'
+alias docod='docker-compose down';
+alias docos='docker-compose stop';
+alias docob='docker-compose build';
