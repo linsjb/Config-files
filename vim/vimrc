@@ -16,6 +16,7 @@ Plugin 'kaicataldo/material.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bfrg/vim-cpp-modern'
 Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,7 +25,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " VIM std settings
-set number
+set relativenumber
 syntax on
 set tabstop=2
 
@@ -43,9 +44,3 @@ colorscheme material
 
 let g:material_theme_style = 'dark'
 
-" Autocomplete for brackets
-"inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O

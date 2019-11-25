@@ -16,6 +16,8 @@ alias new-latex-basic='
 		cd $1;
 		rm -rf .git;
 		rm readme.md;
+		mkdir content;
+		mkdir attachments;
 		echo LaTeX basic project "$1" created sucessfully!
 	}; f'
 alias new-latex-ie3='
