@@ -2,6 +2,14 @@ alias reload="source ~/.zshrc"
 
 alias config="code ~/.zshrc"
 
+alias grb='gradle build'
+
+alias grr='
+	f() {
+		gradle run --args="$1"
+	}; f'
+
+
 alias new-c-program='
 	f() {
 		git clone git@github.com:linsjb/cpp_project_base.git $1;
@@ -63,11 +71,19 @@ alias marked='f() {open -a "Marked 2" $1}; f'
 
 alias latexpres='f() { dspdfviewer $1; }; f'
 
-alias doim='docker images'
 alias dops='docker ps'
 alias dopsa='docker ps -a'
 alias dorm='f() {docker rm $1 $2}; f'
+
+alias doim='docker images'
 alias doimrm='f() {docker image rm $1 $2};f'
+
+alias dovo='docker volume ls'
+alias dovop='docker volume prune'
+
+alias done='docker network ls'
+alias donep='docker network prune'
+
 alias docou='f() {docker-compose up $1}; f'
 alias docod='docker-compose down';
 alias docos='docker-compose stop';

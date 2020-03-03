@@ -11,6 +11,6 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git $HOME/.oh-my-zsh/c
 # Build symlinks
 ln -s ~/.dotfile_configs/vim/vimrc ~/.vimrc
 rm ~/.zshrc
-ln -s ~/.dotfile_configs/zsh/zshrc ~/.zshrc
+ln -s ~/.dotfile_configs/zsh/.zshrc ~/.zshrc
 ln -s ~/.dotfile_configs/hyper/hyper.js ~/.hyper.js
 ln -s $HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
