@@ -9,6 +9,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git $HOME/.oh-my-zsh/c
 
 
 # Build symlinks
+rm ~/.vimrc
 ln -s ~/.dotfile_configs/vim/vimrc ~/.vimrc
 rm ~/.zshrc
 ln -s ~/.dotfile_configs/zsh/.zshrc ~/.zshrc
