@@ -12,8 +12,15 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export LANG=se_SV.UTF-8
-export LC_CTYPE=se_SV.UTF-8
+export LANG=sv_SE.UTF-8
+export LC_CTYPE=sv_SE.UTF-8
+export LC_ALL=sv_SE.UTF-8
+
+# Paths
+export PATH=$PATH:/Applications/MATLAB_R2020a.app/bin
+export PATH=$PATH:/Applications/MATLAB_R2020a.app
+export PATH=$PATH:/Applications/MATLAB_R2020a.app/extern/engines/python
+export PATH=$PATH:/Users/linussjobro/.pyenv/shims/python
 
 # React-native paths to be able to run "run-android" outside Android Studie /IntelliJ IDEA
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -22,11 +29,16 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+
 alias reload="source ~/.zshrc"
 
 alias config="code ~/.zshrc"
 
 alias grb='gradle build'
+
+alias py='f() {
+		python3.7 $1
+	≠; f'
 
 alias grr='
 	f() {
@@ -118,3 +130,8 @@ if [ -f '/Users/linussjobro/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/lin
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/linussjobro/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/linussjobro/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
