@@ -1,10 +1,10 @@
-  // for advanced config flags please refer to https://hyper.is/#cfg
+// for advanced config flags please refer to https://hyper.is/#cfg
 
 module.exports = {
   config: {
     updateChannel: "stable",
     fontSize: 14,
-    fontFamily: 'Fira Code, "Inconsolata-g for Powerline"',
+    fontFamily: '"Hack Nerd Font", Fira Code',
     fontWeight: "normal",
     fontWeightBold: "bold",
     lineHeight: 1,
@@ -43,7 +43,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF"
+      lightWhite: "#FFFFFF",
     },
     shell: "",
 
@@ -52,21 +52,22 @@ module.exports = {
     shellArgs: ["--login"],
 
     env: {
-      LANG: "sv_SE.UTF-8"
+      LANG: "sv_SE.UTF-8",
     },
 
     bell: false,
     copyOnSelect: false,
-    defaultSSHApp: true
+    defaultSSHApp: true,
   },
 
   plugins: [
-    "hyperterm-atom-dark",
     "hyper-statusline",
     "hyper-quit",
-    "hypercwd"
+    "hypercwd",
+    "hyper-one-dark",
+    "hyper-aura-theme"
   ],
 
   localPlugins: [],
-  keymaps: {}
+  keymaps: {},
 };

@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'mattn/emmet-vim'
 Plugin 'kaicataldo/material.vim'
+Plugin 'joshdick/onedark.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bfrg/vim-cpp-modern'
 Plugin 'pangloss/vim-javascript'
@@ -27,7 +28,7 @@ filetype plugin indent on    " required
 " VIM std settings
 set relativenumber
 syntax on
-set tabstop=2
+set tabstop=1
 
 " Enable true colors
 if (has("termguicolors"))

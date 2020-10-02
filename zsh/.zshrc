@@ -10,6 +10,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # User configuration
 export LANG=sv_SE.UTF-8
@@ -21,6 +22,7 @@ export PATH=$PATH:/Applications/MATLAB_R2020a.app/bin
 export PATH=$PATH:/Applications/MATLAB_R2020a.app
 export PATH=$PATH:/Applications/MATLAB_R2020a.app/extern/engines/python
 export PATH=$PATH:/Users/linussjobro/.pyenv/shims/python
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # React-native paths to be able to run "run-android" outside Android Studie /IntelliJ IDEA
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -31,8 +33,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 
 alias reload="source ~/.zshrc"
-
 alias config="code ~/.zshrc"
+
+# Color LS aliases
+# alias l='colorls --group-directories-first --almost-all'
+# alias ll='colorls --group-directories-first --almost-all --long'
+# alias ls='colorls --group-directories-first -1'
 
 alias grb='gradle build'
 
