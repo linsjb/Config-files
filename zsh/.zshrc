@@ -3,25 +3,38 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-)
+#plugins=(
+#	git
+#	zsh-autosuggestions
+#	zsh-syntax-highlighting
+#)
 
+# Initialize plugins
+# Register your plugins here. E.g:
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-completions"
+#zplug "zsh-users/zsh-autosuggestions"
+#zplug "zsh-users/git"
+zplug raabf/dockertex, \
+		from:gitlab
+zplug load
+
+# Plugins
 source $ZSH/oh-my-zsh.sh
-source $(dirname $(gem which colorls))/tab_complete.sh
+#source $(dirname $(gem which colorls))/tab_complete.sh
 
 # User configuration
 export LANG=sv_SE.UTF-8
 export LC_CTYPE=sv_SE.UTF-8
 export LC_ALL=sv_SE.UTF-8
-
+export DOCKERTEX_ENGINE="docker"
+export DOCKERTEX_DEFAULT_TAG="texlive2020"
 # Paths
-export PATH=$PATH:/Applications/MATLAB_R2020a.app/bin
-export PATH=$PATH:/Applications/MATLAB_R2020a.app
-export PATH=$PATH:/Applications/MATLAB_R2020a.app/extern/engines/python
-export PATH=$PATH:/Users/linussjobro/.pyenv/shims/python
+export PATH=/usr/local/sbin:$PATH
+export PATH=$PATH:~/.pyenv/shims/python
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # React-native paths to be able to run "run-android" outside Android Studie /IntelliJ IDEA
@@ -33,7 +46,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 
 alias reload="source ~/.zshrc"
-alias config="code ~/.zshrc"
+alias config="nvim ~/.zshrc"
 
 # Color LS aliases
 # alias l='colorls --group-directories-first --almost-all'
@@ -103,13 +116,11 @@ alias git-init='
 
 alias fetch-pdf='
 	f() {
-		mv *.pdf ~/Downloads/$1.pdf;	
+		mv $1.pdf ~/Downloads/$1.pdf;	
 		echo PDF renamed and moved to ~/downloads succesfully!
 	}; f'
 
 alias marked='f() {open -a "Marked 2" $1}; f'
-
-alias latexpres='f() { dspdfviewer $1; }; f'
 
 # Docker aliases
 alias dops='docker ps'
@@ -141,3 +152,4 @@ if [ -f '/Users/linussjobro/google-cloud-sdk/completion.zsh.inc' ]; then . '/Use
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+export PATH="/usr/local/sbin:$PATH"

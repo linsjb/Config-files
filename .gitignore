@@ -7,3 +7,5 @@ gtk-2.0
 htop
 ParaView
 wireshark
+node_modules
+coc
