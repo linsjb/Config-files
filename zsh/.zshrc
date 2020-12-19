@@ -121,6 +121,7 @@ alias fetch-pdf='
 	}; f'
 
 alias marked='f() {open -a "Marked 2" $1}; f'
+alias za='f() zathura $1; f'
 
 # Docker aliases
 alias dops='docker ps'

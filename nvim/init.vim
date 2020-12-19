@@ -19,11 +19,15 @@ Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'neoclide/coc.nvim'
 
+Plug 'lervag/vimtex'
+
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-startify'
+Plug 'SirVer/ultisnips'
 call plug#end()
 
 source $HOME/.config/nvim/general/general.vim
@@ -33,6 +37,9 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
 source $HOME/.config/nvim/plug-config/rainbowParentheses.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
+source $HOME/.config/nvim/plug-config/vimtex.vim
+source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/ultiSnips.vim
 source $HOME/.config/nvim/themes/colorTheme.vim
 source $HOME/.config/nvim/themes/airline.vim
 

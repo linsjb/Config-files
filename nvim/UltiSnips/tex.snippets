@@ -1,0 +1,73 @@
+snippet beg "begin{} / end{}" bA
+\begin{$1}
+	$0
+\end{$1}
+endsnippet
+
+snippet imz "Itemize" bA
+\begin{itemize}
+\item $1
+$2
+\end{itemize}
+$0
+endsnippet
+
+snippet aimz "Animatex itemize" bA
+\begin{animatedItemize}
+\item $1
+\end{animatedItemize}
+$0
+endsnippet
+
+snippet bfr "Beamer frame" bA
+
+\begin{frame}{$1}
+$2
+\end{frame}
+$0
+endsnippet
+
+snippet btc "Beamer two columns" bA
+\begin{columns}[T, onlytextwidth]
+\column{0.5 \textwidth}
+$1
+
+\column{0.5 \textwidth}
+$2
+\end{columns}
+$0
+endsnippet
+
+snippet bs "Bigskip" bA
+
+\bigskip
+
+$0
+endsnippet
+
+snippet blt "Bold text" A
+\textbf{$1} $0
+endsnippet
+
+snippet itt "Italian text" A
+\textit{$1} $0
+endsnippet
+
+snippet sct "Section" bA
+
+\section{$1}
+$0
+endsnippet
+
+snippet cit "Cite" A
+\cite{$1} $0
+endsnippet
+
+snippet btoc "Table of Content" bA
+
+\begin{frame}{$1}
+\tableofcontents
+\end{frame}
+
+$0
+endsnippet

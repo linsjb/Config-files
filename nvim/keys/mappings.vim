@@ -5,15 +5,25 @@ inoremap kj <Esc>
 nnoremap <S-Q> <Home>
 nnoremap <S-W> <End>
 
+" Go to end of screen line
+nnoremap <C-w> g$
+
+" Go to start of screen line
+nnoremap <C-q> g0
+
 " Go to last open file
-map <leader>bb <c-^><CR>
+map <leader>b <c-^><CR>
+
+" Buffers
+nmap <leader>v :Buffers<CR>
+
 
 " fzf
 nnoremap <S-F> :GFiles<CR>
 nmap <C-p> :Files<CR>
 
-" Nerd tree
-nnoremap <S-N> :NERDTreeToggle<CR>
+" COC
+nnoremap <leader>n :CocCommand explorer<CR>
 
 " Better tabbing
 vnoremap < <gv
@@ -25,3 +35,6 @@ nnoremap <leader>gb :GBranches<CR>
 
 " Clang
 nnoremap <leader>f :<C-u>ClangFormat<CR>
+
+" Latex
+nmap <leader>lc :VimtexCompile<CR>
