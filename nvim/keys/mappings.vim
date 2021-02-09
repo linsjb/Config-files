@@ -1,7 +1,5 @@
 let mapleader = " "
 " Vanilla vim remapping
-inoremap jk <Esc>
-inoremap kj <Esc>
 nnoremap <S-Q> <Home>
 nnoremap <S-W> <End>
 
@@ -11,11 +9,15 @@ nnoremap <C-w> g$
 " Go to start of screen line
 nnoremap <C-q> g0
 
+vnoremap <M-c> "+y
+
 " Go to last open file
 map <leader>b <c-^><CR>
 
 " Buffers
 nmap <leader>v :Buffers<CR>
+nmap <C-j> :bprevious<CR>
+nmap <C-k> :bnext<CR>
 
 
 " fzf
@@ -38,3 +40,5 @@ nnoremap <leader>f :<C-u>ClangFormat<CR>
 
 " Latex
 nmap <leader>lc :VimtexCompile<CR>
+nmap <leader>lo :VimtexCompileOutput<CR>
+nmap <leader>le :VimtexErrors<CR>

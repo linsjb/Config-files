@@ -46,14 +46,14 @@ set notification-bg "#90A959" #0B
 set notification-fg "#151515" #00
 
 set recolor "true"
-set recolor-lightcolor "#282c34" #00
-set recolor-darkcolor "#ABB2BF" #06
+set recolor-lightcolor "#263238" #Dark background color
+set recolor-darkcolor "#B0BEC5" #Dark foreground color
 set recolor-reverse-video "true"
 set recolor-keephue "true"
 
 
 set render-loading "false"
-set scroll-step 50
+set scroll-step 40
 unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen

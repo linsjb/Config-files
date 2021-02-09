@@ -1,18 +1,101 @@
+snippet inp "Input" bA
+\input{$1}
+$0
+endsnippet
+
 snippet beg "begin{} / end{}" bA
 \begin{$1}
 	$0
 \end{$1}
 endsnippet
 
-snippet imz "Itemize" bA
-\begin{itemize}
-\item $1
+snippet beq "Begin{equation}" bA
+\begin{equation} \label{eq:$1}
 $2
-\end{itemize}
+\end{equation}
+
 $0
 endsnippet
 
-snippet aimz "Animatex itemize" bA
+snippet imz "Itemize" bA
+
+\begin{itemize}
+\item $1
+\item $2
+\end{itemize}
+
+$0
+endsnippet
+
+snippet emu "Enumerate" bA
+\begin{enumerate}
+\item $1
+$1
+\end{enumerate}
+
+$0
+endsnippet
+
+snippet bs "Bigskip" bA
+
+\bigskip
+
+$0
+endsnippet
+
+snippet blt "Bold text" A
+\textbf{$1} $0
+endsnippet
+
+snippet itt "Italian text" A
+\textit{$1} $0
+endsnippet
+
+snippet sct "Section" bA
+\section{$1}
+$0
+endsnippet
+
+snippet ssct "Sub section" bA
+\subsection{$1}
+$0
+endsnippet
+
+snippet sssct "Sub sub section" bA
+\subsubsection{$1}
+$0
+endsnippet
+
+snippet citt "Cite" A
+\cite{$1} $0
+endsnippet
+
+snippet cref "Cref" A
+\cref{$1} $0
+endsnippet
+
+snippet irf "Ref" A
+\ref{$1} $0
+endsnippet
+
+# Custom commands snippets
+snippet ifig "Oneline figure" A
+
+\fig{$1}{$2}{1.0$3}{$4}
+
+$0
+endsnippet
+
+# Beamer snippets
+snippet btoc "Table of Content" bA
+\begin{frame}{$1}
+\tableofcontents
+\end{frame}
+
+$0
+endsnippet
+
+snippet aimz "Beamer animatex itemize" bA
 \begin{animatedItemize}
 \item $1
 \end{animatedItemize}
@@ -37,37 +120,14 @@ $2
 \end{columns}
 $0
 endsnippet
-
-snippet bs "Bigskip" bA
-
-\bigskip
-
-$0
+snippet acrf "Acr full" A
+\acrfull{$1} $0
 endsnippet
 
-snippet blt "Bold text" A
-\textbf{$1} $0
+snippet acrs "Acr short" A
+\acrshort{$1} $0
 endsnippet
 
-snippet itt "Italian text" A
-\textit{$1} $0
-endsnippet
-
-snippet sct "Section" bA
-
-\section{$1}
-$0
-endsnippet
-
-snippet cit "Cite" A
-\cite{$1} $0
-endsnippet
-
-snippet btoc "Table of Content" bA
-
-\begin{frame}{$1}
-\tableofcontents
-\end{frame}
-
-$0
+snippet acrl "Acr long" A
+\acrlong{$1} $0
 endsnippet

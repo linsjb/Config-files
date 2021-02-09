@@ -49,9 +49,9 @@ alias reload="source ~/.zshrc"
 alias config="nvim ~/.zshrc"
 
 # Color LS aliases
-# alias l='colorls --group-directories-first --almost-all'
-# alias ll='colorls --group-directories-first --almost-all --long'
-# alias ls='colorls --group-directories-first -1'
+alias l='colorls --group-directories-first --almost-all'
+alias ll='colorls --group-directories-first --almost-all --long'
+alias ls='colorls --group-directories-first -1'
 
 alias grb='gradle build'
 
@@ -65,6 +65,16 @@ alias grr='
 	}; f'
 
 
+# C-stuffs
+alias cb='cmake --build _build'
+alias ccr='
+  f() {
+	echo --- Compile ouput ---;
+  	cmake --build _build;
+	echo;
+	echo --- Program output ---;
+	./_build/src/$1;
+  }; f'
 alias new-c-program='
 	f() {
 		git clone git@github.com:linsjb/cpp_project_base.git $1;
@@ -154,3 +164,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 export PATH="/usr/local/sbin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
