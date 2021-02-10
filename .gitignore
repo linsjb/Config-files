@@ -9,3 +9,4 @@ ParaView
 wireshark
 node_modules
 coc
+! ./coc/extensions/package.json

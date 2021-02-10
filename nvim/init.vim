@@ -20,7 +20,6 @@ Plug 'lervag/vimtex'
 
 " Themes
 Plug 'joshdick/onedark.vim'
-Plug 'safv12/andromeda.vim'
 
 " FZF
 Plug 'junegunn/fzf', {'do': {->fzf#install()}}
@@ -29,8 +28,8 @@ Plug 'stsewd/fzf-checkout.vim'
 
 " COC
 Plug 'neoclide/coc.nvim'
+-
 Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -47,7 +46,6 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
 source $HOME/.config/nvim/plug-config/rainbowParentheses.vim
-source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/ultiSnips.vim

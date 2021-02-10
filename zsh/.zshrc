@@ -26,6 +26,8 @@ zplug load
 source $ZSH/oh-my-zsh.sh
 #source $(dirname $(gem which colorls))/tab_complete.sh
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 # User configuration
 export LANG=sv_SE.UTF-8
 export LC_CTYPE=sv_SE.UTF-8
