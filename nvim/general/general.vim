@@ -7,3 +7,5 @@ set noshowmode
 set shiftwidth=2
 set autoindent
 set smartindent
+set nocompatible
+filetype plugin on

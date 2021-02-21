@@ -18,6 +18,9 @@ Plug 'grvcoelho/vim-javascript-snippets'
 " Vim plugins
 Plug 'lervag/vimtex'
 
+" Vim Wiki
+Plug 'vimwiki/vimwiki'
+
 " Themes
 Plug 'joshdick/onedark.vim'
 
@@ -49,6 +52,7 @@ source $HOME/.config/nvim/plug-config/rainbowParentheses.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/ultiSnips.vim
+source $HOME/.config/nvim/plug-config/vimwiki.vim
 
 source $HOME/.config/nvim/themes/colorTheme.vim
 source $HOME/.config/nvim/themes/airline.vim
