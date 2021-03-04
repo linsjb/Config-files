@@ -19,6 +19,8 @@ nmap <leader>v :Buffers<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
 
+" Spelling
+nmap <leader>us :set spell spelllang=en_gb<CR>
 
 " fzf
 nnoremap <S-F> :GFiles<CR>

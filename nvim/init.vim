@@ -22,7 +22,7 @@ Plug 'lervag/vimtex'
 Plug 'vimwiki/vimwiki'
 
 " Themes
-Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
 
 " FZF
 Plug 'junegunn/fzf', {'do': {->fzf#install()}}
