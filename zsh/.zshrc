@@ -128,7 +128,7 @@ alias git-init='
 
 alias fetch-pdf='
 	f() {
-		mv $1.pdf ~/Downloads/$1.pdf;	
+		mv $1.pdf ~/Downloads/$2.pdf;	
 		echo PDF renamed and moved to ~/downloads succesfully!
 	}; f'
 
