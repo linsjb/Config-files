@@ -13,6 +13,11 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-set background=dark
-let g:onedark_termcolors=256
-colorscheme onedark
+
+colorscheme one
+
+if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+  set background=dark
+else
+  set background=light
+endif

@@ -10,8 +10,11 @@ let g:airline_powerline_fonts = 1
 "let g:airline_left_sep = ''
 "let g:airline_right_sep = ''
 
-" Switch to your current theme
-let g:airline_theme = 'onedark'
+if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+  let g:airline_theme = 'onedark'
+else
+  let g:airline_theme = 'light'
+endif
 
 " Always show tabs
 set showtabline=2
